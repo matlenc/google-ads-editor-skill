@@ -163,9 +163,9 @@ Vincular ao Google Meu Negócio (se disponível).
 
 ---
 
-## Os 4 Blocos TSV que Devem Ser Gerados
+## Os 5 Blocos TSV que Devem Ser Gerados
 
-Ao executar a skill, gerar sempre os 4 blocos abaixo, nesta ordem, cada um pronto para colar em sua respectiva opção no "Fazer várias alterações":
+Ao executar a skill, gerar sempre os 5 blocos abaixo, nesta ordem, cada um pronto para colar em sua respectiva opção no "Fazer várias alterações":
 
 ### BLOCO 1 — Palavras-chave
 Seção: **Keywords and targeting → Keywords**
@@ -188,6 +188,27 @@ Colunas: `Campaign | Ad Group | Headline 1 | Headline 2 | ... | Headline 15 | De
 
 > Lembrar o usuário de substituir `[URL-LANDING-PAGE]` pela URL real antes de colar o bloco 4.
 
+### BLOCO 5 — Sitelinks
+Seção: **Ads and extensions → Sitelinks**
+Colunas: `Campaign | Link Text | Line 1 | Line 2 | Final URL`
+
+Regras:
+- `Link Text`: máx. 25 caracteres
+- `Line 1` e `Line 2`: máx. 35 caracteres cada
+- `Final URL`: URL real de destino (pode ser a mesma landing page ou URLs específicas por seção do site)
+- Mínimo 4 sitelinks por campanha, ideal 6
+- Sitelinks são no nível de campanha — repetir o nome da campanha em cada linha
+
+Exemplo de estrutura:
+```
+Campaign	Link Text	Line 1	Line 2	Final URL
+Elevate | Search | Majestic - Praia | Sudeste	Solicitar Orçamento	Proposta em até 24 horas	Sem compromisso	[URL]
+Elevate | Search | Majestic - Praia | Sudeste	Falar no WhatsApp	Atendimento direto com consultor	Segunda a sexta, 9h às 18h	[URL]
+Elevate | Search | Majestic - Praia | Sudeste	Nossos Empreendimentos	Conheça o portfólio completo	Alto padrão no Litoral Norte	[URL]
+Elevate | Search | Majestic - Praia | Sudeste	Agendar Visita	Visite o decorado presencialmente	Caraguatatuba e região	[URL]
+Elevate | Search | Majestic - Praia | Sudeste	Sobre a Elevate	Incorporadora com projetos premiados	SP e Litoral Norte	[URL]
+```
+
 ---
 
 ## Como Executar
@@ -199,6 +220,7 @@ Colunas: `Campaign | Ad Group | Headline 1 | Headline 2 | ... | Headline 15 | De
    - Diferenciais do negócio (prazo, qualidade, tecnologia, etc.)
    - ICP (quem compra: engenheiro, médico, consumidor final, etc.)
    - URL da landing page
+   - URLs específicas por seção do site (para sitelinks, se disponíveis)
 
 2. **Definir campanhas** — uma por produto principal
 
@@ -206,9 +228,9 @@ Colunas: `Campaign | Ad Group | Headline 1 | Headline 2 | ... | Headline 15 | De
 
 4. **Gerar keywords** — baseadas no produto, localização e intenção
 
-5. **Gerar os 4 blocos TSV** na ordem correta
+5. **Gerar os 5 blocos TSV** na ordem correta
 
-6. **Gerar tabela de extensões** separada (não vai no TSV — configurar manualmente no Editor)
+6. **Gerar tabela de extensões** separada para callouts, snippets e extensão de chamada (configurar manualmente no Editor)
 
 ---
 
